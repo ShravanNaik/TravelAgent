@@ -1,0 +1,8 @@
+python-dotenv
+langchain
+langchain-openai
+grandalf
+streamlit
+serpapi
+agno 
+crewai
