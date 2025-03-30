@@ -23,7 +23,7 @@ load_dotenv()
 
 # Set API keys from environment variables
 os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY_TRAVEL_AGENT")
 
 # Initialize tools
 search_tool = SerperDevTool()
@@ -104,7 +104,7 @@ class TravelPlanningCrew:
         self.special_requirements = special_requirements
         
         # Initialize LLM
-        self.llm=LLM(model='gemini/gemini-1.5-flash',temperature=0.7,api_key=os.environ["GOOGLE_API_KEY"])
+        self.llm=LLM(model='gemini/gemini-1.5-flash',temperature=0.7,api_key=os.environ["GOOGLE_API_KEY_TRAVEL_AGENT"])
         # self.llm=LLM(model="openai/gpt-4o-mini",temperature=0.7,api_key=os.environ["OPENAI_API_KEY"])
 
         # Temp file paths for storing unverified content
