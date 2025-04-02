@@ -771,7 +771,7 @@ def main():
             "📅 Itinerary"
         ])
         
-        with st.spinner('Our AI agents are working on your perfect travel plan...'):
+        with st.spinner('Our AI agents crew are working on your perfect travel plan please be patient...'):
             travel_crew = TravelPlanningCrew(
                 destination=destination,
                 departure_airport=departure_airport,
