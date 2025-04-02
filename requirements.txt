@@ -9,6 +9,6 @@ crewai_tools
 pysqlite3-binary
 langchain-google-genai
 plotly
-google-search-results
 matplotlib
+google-search-results
 
