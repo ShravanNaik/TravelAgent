@@ -36,7 +36,7 @@ class HotelsFinderTool(BaseTool):
         Returns:
             str: Hotel search results
         """
-        # Remove None values from params to avoid validation issues
+        # Remove None values from params to avoid validation issuess
         params = {
         'api_key': os.environ.get('serpapi'),
         'engine': 'google_hotels',
