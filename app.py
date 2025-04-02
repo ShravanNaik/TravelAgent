@@ -108,7 +108,7 @@ class TravelPlanningCrew:
         self.special_requirements = special_requirements
         
         # Initialize LLM
-        self.llm=LLM(model='gemini/gemini-1.5-flash',api_key=os.environ["GOOGLE_API_KEY"],num_retries=2)
+        self.llm= ChatOpenAI(model = "gpt-3.5-turbo-0125")
         # self.llm=LLM(model="openai/gpt-4o-mini",temperature=0.7,api_key=os.environ["OPENAI_API_KEY"])
 
         # Temp file paths for storing unverified content
@@ -156,7 +156,7 @@ class TravelPlanningCrew:
             find the best deals and most comfortable routes.
             """),
             llm=self.llm,
-            max_iter=5,
+            max_iter=3,
             tools=[FlightsFinderTool()],
             verbose=True
         )
@@ -174,7 +174,7 @@ class TravelPlanningCrew:
             """),
             llm=self.llm,
             tools=[HotelsFinderTool()],
-            max_iter=5,
+            max_iter=3,
             verbose=True
         )
 
@@ -190,7 +190,7 @@ class TravelPlanningCrew:
             """),
             llm=self.llm,
             tools=[search_tool],
-            max_iter=5,
+            max_iter=3,
             verbose=True,
             allow_delegation=False
         )
@@ -212,7 +212,7 @@ class TravelPlanningCrew:
             """),
             llm=self.llm,
             verbose=True,
-            max_iter=5,
+            max_iter=3,
             allow_delegation=False
         )
 
