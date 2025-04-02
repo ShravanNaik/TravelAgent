@@ -6,4 +6,9 @@ streamlit
 serpapi
 crewai
 crewai_tools
+pysqlite3-binary
+langchain-google-genai
+plotly
+google-search-results
+matplotlib
 
