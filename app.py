@@ -1,7 +1,7 @@
-# import importlib
-# import sys
-# __import__('pysqlite3')
-# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+import sys
+import importlib
+importlib.import_module('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 import re
 import streamlit as st
@@ -23,9 +23,9 @@ from tools.HotelAgent import HotelsFinderTool
 import networkx as nx
 import matplotlib.pyplot as plt
 
-package__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+# package__import__('pysqlite3')
+# import sys
+# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 # Load environment variables
 load_dotenv()
 
