@@ -11,7 +11,8 @@ from datetime import datetime, timedelta
 import time
 from dotenv import load_dotenv
 from crewai import Crew, Agent, Task, Process,LLM
-from crewai_tools import ScrapeWebsiteTool, SerperDevTool
+# from crewai_tools import ScrapeWebsiteTool, SerperDevTool
+from crewai.tools import ScrapeWebsiteTool, SerperDevTool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 from textwrap import dedent
