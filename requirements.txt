@@ -4,6 +4,6 @@ langchain-openai
 grandalf
 streamlit
 serpapi
-agno 
 crewai
-crewai-tools
+crewai_tools
+
