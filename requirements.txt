@@ -11,4 +11,4 @@ langchain-google-genai
 plotly
 matplotlib
 google-search-results
-
+crewai[tools]
