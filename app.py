@@ -108,8 +108,8 @@ class TravelPlanningCrew:
         self.special_requirements = special_requirements
         
         # Initialize LLM
-        # self.llm=LLM(model='gemini/gemini-1.5-pro',temperature=0.3,api_key=os.environ["GOOGLE_API_KEY"],num_retries=2)
-        self.llm=LLM(model="openai/gpt-4o-mini",temperature=0.7,api_key=os.environ["OPENAI_API_KEY"])
+        self.llm=LLM(model='gemini/gemini-1.5-flash',api_key=os.environ["GOOGLE_API_KEY"],num_retries=2)
+        # self.llm=LLM(model="openai/gpt-4o-mini",temperature=0.7,api_key=os.environ["OPENAI_API_KEY"])
 
         # Temp file paths for storing unverified content
         self.temp_output_dir = "temp_outputs"
