@@ -370,7 +370,6 @@ class TravelPlanningCrew:
             - Format the itinerary with clear day headings, timeframes, and sections
             """),
             agent=itinerary_specialist,
-            human_input = True,
             expected_output="A comprehensive day-by-day travel itinerary in markdown format with all requested elements.",
             output_file=self.temp_itinerary_file
         )
