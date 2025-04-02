@@ -12,7 +12,6 @@ import time
 from dotenv import load_dotenv
 from crewai import Crew, Agent, Task, Process,LLM
 from crewai_tools import ScrapeWebsiteTool, SerperDevTool
-# from crewai.tools import ScrapeWebsiteTool, SerperDevTool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_openai import ChatOpenAI
 from textwrap import dedent
@@ -23,15 +22,12 @@ from tools.HotelAgent import HotelsFinderTool
 import networkx as nx
 import matplotlib.pyplot as plt
 
-# package__import__('pysqlite3')
-# import sys
-# sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-# Load environment variables
+
 load_dotenv()
 
 # Set API keys from environment variables
 os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
 
 # Initialize tools
 search_tool = SerperDevTool()
