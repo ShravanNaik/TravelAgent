@@ -138,8 +138,8 @@ class TravelPlanningCrew:
             You have visited over 100 countries and have written for major travel publications.
             """),
             llm=self.llm,
-            tools=[search_tool, scrape_tool],
-            max_iter=35,
+            tools=[search_tool],
+            max_iter=5,
             verbose=True,
             allow_delegation=False
         )
@@ -156,6 +156,7 @@ class TravelPlanningCrew:
             find the best deals and most comfortable routes.
             """),
             llm=self.llm,
+            max_iter=5,
             tools=[FlightsFinderTool()],
             verbose=True
         )
@@ -173,6 +174,7 @@ class TravelPlanningCrew:
             """),
             llm=self.llm,
             tools=[HotelsFinderTool()],
+            max_iter=5,
             verbose=True
         )
 
@@ -187,7 +189,8 @@ class TravelPlanningCrew:
             You have planned over 1,000 successful trips for clients with diverse needs and preferences.
             """),
             llm=self.llm,
-            tools=[search_tool, scrape_tool],
+            tools=[search_tool],
+            max_iter=5,
             verbose=True,
             allow_delegation=False
         )
@@ -209,6 +212,7 @@ class TravelPlanningCrew:
             """),
             llm=self.llm,
             verbose=True,
+            max_iter=5,
             allow_delegation=False
         )
 
