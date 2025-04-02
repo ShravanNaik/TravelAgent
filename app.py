@@ -17,7 +17,9 @@ from tools.HotelAgent import HotelsFinderTool
 import networkx as nx
 import matplotlib.pyplot as plt
 
-
+package__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 # Load environment variables
 load_dotenv()
 
