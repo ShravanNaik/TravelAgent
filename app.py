@@ -29,7 +29,7 @@ load_dotenv()
 os.environ["SERPER_API_KEY"] = os.getenv("SERPER_API_KEY")
 os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
 
-# Initialize tools
+# Initialize toolss
 search_tool = SerperDevTool()
 scrape_tool = ScrapeWebsiteTool()
 
