@@ -21,7 +21,7 @@ class FlightsFinderTool(BaseTool):
         outbound_date: Optional[str] = Field(description='Outbound date in YYYY-MM-DD format'),
         return_date: Optional[str] = Field(description='Return date in YYYY-MM-DD format'),
         adults: int = 1,  # Default to 1
-        children: int = 0,  # Default to 0
+        children: int = 0,  # Defaultt to 0
         infants_in_seat: int = 0,  # Default to 0
         infants_on_lap: int = 0,  # Default to 0
         stops:int=0
