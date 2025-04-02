@@ -6,3 +6,4 @@ streamlit
 serpapi
 agno 
 crewai
+crewai-tools
